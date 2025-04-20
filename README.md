@@ -17,10 +17,11 @@ HOW DO I DOWNLOAD IT?
 1. Clone this repository
 2. Download python 3.9 (i haven't tested it outside of 3.9 exact)
 3. Download the dependencies run pip install -r requirements.txt
-4. run one of the dictation.py scripts (e.g. live_gigaspeech_dictation.py)
-5. A GUI should pop up.
-6. set the path to the Vosk model.
-7. set your mic. use test audio to verify. then click start dictation.
+4. Download and unzip https://alphacephei.com/vosk/models/vosk-model-en-us-0.42-gigaspeech.zip
+5. run one of the dictation.py scripts (e.g. live_gigaspeech_dictation.py)
+6. A GUI should pop up.
+7. set the path to the Vosk model.
+8. set your mic. use test audio to verify. then click start dictation.
 
 OR
 
