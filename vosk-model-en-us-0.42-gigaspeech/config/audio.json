@@ -1,0 +1,16 @@
+{
+    "mic_samplerate": 96000,
+    "mic_channels": 2,
+    "mic_bitdepth": 24,
+    "vosk_samplerate": 16000,
+    "wav_file": "output_gigaspeech.wav",
+    "transcription_file": "dictation_output_gigaspeech.txt",
+    "device_index": 1,
+    "silence_threshold": 0.5,
+    "blocksize": 32000,
+    "pre_scale_factor": 0.02,
+    "silence_amplitude_threshold": 0.5,
+    "startup_delay": 5,
+    "command_debounce_time": 1.0,
+	"relative_sensitivity": true
+}
