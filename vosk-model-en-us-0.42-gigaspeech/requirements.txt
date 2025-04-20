@@ -1,0 +1,9 @@
+sounddevice
+vosk
+numpy
+scipy
+keyboard
+pyspellchecker
+nltk
+pyautogui
+dearpygui
