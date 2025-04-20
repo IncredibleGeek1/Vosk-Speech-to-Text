@@ -29,6 +29,7 @@ Despite the detected command, no action is performed.
    - Main script: `execute_command` and `execute_computer_command`.
    - GUI module: `handle_command`.
 4. Submit a pull request with your fix.
+
 ^^^^^^^^^^^^^^^ AI said it was there... all i know is injecting isn't working. tokenizing semi worked but got too complex. i want simple and efficient. not complex to do a simple task. (unless complex needed for efficiency. hence audio based things within script)
 
 
