@@ -21,7 +21,7 @@ Detected command: move left
 
 Despite the detected command, no action is performed.
 
-\/\/\/\/\/\/\/\/
+
 ## How to Contribute
 1. Clone the repository.
 2. Run `live_gigaspeech_dictation_v31.3.py` to reproduce the issue.
@@ -29,7 +29,7 @@ Despite the detected command, no action is performed.
    - Main script: `execute_command` and `execute_computer_command`.
    - GUI module: `handle_command`.
 4. Submit a pull request with your fix.
-/\/\/\/\/\/\/\/\ AI said it was there... all i know is injecting isn't working. tokenizing semi worked but got too complex. i want simple and efficient. not complex to do a simple task. (unless complex needed for efficiency. hence audio based things within script)
+^^^^^^^^^^^^^^^ AI said it was there... all i know is injecting isn't working. tokenizing semi worked but got too complex. i want simple and efficient. not complex to do a simple task. (unless complex needed for efficiency. hence audio based things within script)
 
 
 Side Note: trust me this isn't version 31. it is an evovled script 12 from small model, reused 11 from medium model which then went into 60 version on the big model. it actually was 1 script but it got too big and i thought by seperating it. would prevent braking. also allow vosk vs gui to have less workload per script. then with .py to exe via nuitka ... it broke. also once adding the exe compatibility py broke. so i turned gui into a module. main script imports it. as you've read I don't know how to code. I do IT so used those skills with AI to put this together. also I HATE TOKENIZATION. the commands worked when it was seperate and finding path. it was BEAUTIFUL. but once I turned it into a module.... it broke everything. there are a few features in the gui I don't know how to do but have the idea. so they are in there.
