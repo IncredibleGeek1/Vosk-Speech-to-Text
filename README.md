@@ -22,6 +22,10 @@ HOW DO I DOWNLOAD IT?
 6. set the path to the Vosk model.
 7. set your mic. use test audio to verify. then click start dictation.
 
+OR
+
+WAIT till i work out the bugs necassary and I'll link my patreon so you can download the exe. (if not that complicated. mac and linuc. possibly andriod. not iphone since they can't sideload)
+
 WILL YOU BE ADDING MORE FEATURES?
 If requested and within the scope of project also my idea. Don't worry it's not that stingy. There are A LOT of features I just didn't put in fear that it would be too combersome and not user friendly. So they are on the back burner. some features weren't part of my initial idea but loved the thought and implimentation. (e.g. waveform)
 
