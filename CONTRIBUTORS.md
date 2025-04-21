@@ -44,3 +44,18 @@ BOTH THE OPEN SOURCE AND PAID WILL HAVE THE SAME FEATURES. furher insentivising 
 cautionary measure. i have aspergers so if i come off as an asshole... probably not my intent unless i'm pissed. so yea i word things weirdly. just ask for clarification i'll be more than happy to do so. the only things that actually tick me off is others lack of understanding me or others, and implying/assuming others know what i'm thinking or my intent was. (soo many do so and a lot use logical fallacies). otherwise i've been told "i'm chill as if i'm high all the time" idk if that's a compliment or insult. lol 
 
 LASTLY. if need be. I do have every script i've created for this project on my computer. if need be i can create a CONTRIUBUTORS folder... so you can see every itteration an the path that i took to get here. aka i didn't txt document. only mental notes but those scripts are my "Documenation".
+
+
+OTHER ISSUES I WISH TO BE FIXED. if possible.
+
+1. debug audio. open a new window akin to PCSX2 debug window.
+2. the relative sensitivity is basically 16bit audio 30% = x% when 24bit. the slider should move as changing bit depth. but same relative volume.
+3. debug audio. open a new window akin to PCSX2 debug window.
+4. silent threshold i don't think is working properly.
+5. rnnoise + webrtc for noise suppression and echo removal. (unless internet access is required. if local download is possible sure otherwise forget it)
+6. gpu acceleration pytourch. last time i tried it. it broke everything. i don't know why. AI says compatibility between versions.
+gpu accel will be to process vosk to make it more real time. the volume meter is already good enough. (it could look better but it's adequate.)
+7. clipping indicator on the audio level. currently it's just a circle on top of everything. it's not like how an audio mixer red light indicates. i'd prefer it on top right corner of the audio level.
+
+
+for now that's about it. yea these don't ruin funcationality. but that first one does. commands is a MUST. the rnnoise+webrtc is to allow for worse envoirnmental conditions and it still work.
