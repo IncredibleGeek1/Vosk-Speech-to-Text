@@ -1,0 +1,10 @@
+sounddevice 0.4.6
+vosk 0.3.45
+numpy 1.24.3
+scipy 1.10.1
+keyboard 0.13.5
+pyspellchecker 0.8.2
+spellchecker 0.4
+nltk 3.8.1
+PyAutoGUI 0.9.54
+dearpygui 1.9.1
