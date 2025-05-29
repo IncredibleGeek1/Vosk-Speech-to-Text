@@ -27,8 +27,7 @@ except Exception as e:
 
 # Parse command-line arguments
 parser = argparse.ArgumentParser(description="Live speech-to-text dictation with Vosk.")
-parser.add_argument("--model", type=str, default="C:/Users/MenaBeshai/Downloads/Speech to Text/vosk-model-en-us-0.42-gigaspeech",
-                    help="Path to the Vosk model directory.")
+parser.add_argument("--model", type=str, default="C:/Users/MenaBeshai/Downloads/Speech to Text/vosk-model-en-us-0.42-gigaspeech", help="Path to the Vosk model directory.")
 parser.add_argument("--bit-depth", type=int, default=24, choices=[16, 24, 32], help="Bit depth for audio input (16, 24, or 32)")
 parser.add_argument("--sample-rate", type=int, default=96000, choices=[44100, 48000, 88200, 96000, 176400, 192000], help="Sample rate for audio input (Hz)")
 parser.add_argument("--pre-scale-factor", type=float, default=0.002, help="Pre-scale factor for audio input")
