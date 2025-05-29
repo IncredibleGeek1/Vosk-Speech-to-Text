@@ -1,26 +1,3 @@
-#MIT License
-
-#Copyright (c) 2025 IncredibleGeek
-
-#Permission is hereby granted, free of charge, to any person obtaining a copy
-#of this software and associated documentation files (the "Software"), to deal
-#in the Software without restriction, including without limitation the rights
-#to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-#copies of the Software, and to permit persons to whom the Software is
-#furnished to do so, subject to the following conditions:
-
-#The above copyright notice and this permission notice shall be included in all
-#copies or substantial portions of the Software.
-
-#THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-#IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-#FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-#AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-#LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-#OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-#SOFTWARE.
-
-
 import queue
 import sys
 import sounddevice as sd
@@ -50,7 +27,8 @@ except Exception as e:
 
 # Parse command-line arguments
 parser = argparse.ArgumentParser(description="Live speech-to-text dictation with Vosk.")
-parser.add_argument("--model", type=str, default="C:/Users/MenaBeshai/Downloads/Speech to Text/vosk-model-en-us-0.42-gigaspeech", help="Path to the Vosk model directory.")
+parser.add_argument("--model", type=str, default="C:/Users/MenaBeshai/Downloads/Speech to Text/vosk-model-en-us-0.42-gigaspeech",
+                    help="Path to the Vosk model directory.")
 parser.add_argument("--bit-depth", type=int, default=24, choices=[16, 24, 32], help="Bit depth for audio input (16, 24, or 32)")
 parser.add_argument("--sample-rate", type=int, default=96000, choices=[44100, 48000, 88200, 96000, 176400, 192000], help="Sample rate for audio input (Hz)")
 parser.add_argument("--pre-scale-factor", type=float, default=0.002, help="Pre-scale factor for audio input")
@@ -120,7 +98,6 @@ COMMANDS_JSON_PATH = os.path.join("config", "commands.json")
 
 # Paths to map JSON files (in the config folder)
 CONFIG_DIR = "config"
-COMMANDS_MAP_PATH = os.path.join(CONFIG_DIR, "commands_map.json")
 FRACTIONS_MAP_PATH = os.path.join(CONFIG_DIR, "fractions_map.json")
 F_KEYS_MAP_PATH = os.path.join(CONFIG_DIR, "f_keys_map.json")
 FUNCTIONS_MAP_PATH = os.path.join(CONFIG_DIR, "functions_map.json")
@@ -144,7 +121,6 @@ NUMBERS_MAP = {
 }
 
 # Load maps from JSON files
-COMMANDS_MAP = load_json_map(COMMANDS_MAP_PATH, "commands map")
 FRACTION_MAP = load_json_map(FRACTIONS_MAP_PATH, "fractions map")
 F_KEYS_MAP = load_json_map(F_KEYS_MAP_PATH, "f-keys map")
 FUNCTIONS_MAP = load_json_map(FUNCTIONS_MAP_PATH, "functions map")
@@ -473,7 +449,8 @@ print("Starting live speech-to-text with Vosk (GigaSpeech 0.42 model). Speak to 
 try:
     rec = vosk.KaldiRecognizer(model, VOSK_SAMPLERATE)
     last_partial = ""  # To track the last partial result and reduce spam
-    with sd.RawInputStream(samplerate=MIC_SAMPLERATE, blocksize=BLOCKSIZE, dtype="int32", channels=MIC_CHANNELS, callback=callback, device=DEVICE_INDEX):
+    with sd.RawInputStream(samplerate=MIC_SAMPLERATE, blocksize=BLOCKSIZE, dtype="int32",
+                           channels=MIC_CHANNELS, callback=callback, device=DEVICE_INDEX):
         stop_listening = False
         while True:
             if stop_listening:
