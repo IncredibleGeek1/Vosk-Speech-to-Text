@@ -1,5 +1,5 @@
 {
-    "simple_commands": {
+  "simple_commands": {
     "stop listening": "cmd_stop_listening",
     "select all": "cmd_select_all",
     "select down": "cmd_select_down",
@@ -70,8 +70,8 @@
     "punctuation plus": "cmd_punctuation_plus",
     "punctuation equals": "cmd_punctuation_equals",
     "press escape": "cmd_press_escape"
-    },
-    "parameterized_commands": [
+  },
+  "parameterized_commands": [
     "highlight ",
     "find ",
     "insert after ",
@@ -88,5 +88,5 @@
     "move right ",
     "function ",
     "quote unquote "
-    ]
+  ]
 }
