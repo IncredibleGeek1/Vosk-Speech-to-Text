@@ -7,7 +7,7 @@ pyautogui==0.9.54
 pyqtgraph==0.13.7
 PyQt5==5.15.2
 dearpygui==1.9.1
-keyboard-0.13.5
+keyboard==0.13.5
 vosk==0.3.45
 spellchecker==0.4
 argparse==1.4.0
